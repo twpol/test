@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+      - "release/*"
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: smartinspereira/auto-create-pr-action@v0.1.0
+        env:
+          # BRANCH_PREFIX = ""
+          # BASE_BRANCH = ""
+          # PULL_REQUEST_TITLE = ""
+          # PULL_REQUEST_BODY = ""
+          # PULL_REQUEST_DRAFT = "true"
